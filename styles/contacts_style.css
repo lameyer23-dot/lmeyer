@@ -1,0 +1,112 @@
+/*  I changed some of the colors around, but I'm not sure if I'm going to keep it like this yet. */
+
+header, nav, main, footer { display: block; }
+body { background-color: #484A45;
+       font-family: Verdana, Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1F201E;
+    color: #f1f1f1;
+  }
+}
+
+#wrapper { max-width: 70%;
+           margin: auto;
+                 /*tab thingy color underneath*/
+		   background-color: #3E4B2F;
+                 /*text color underneath*/
+		   color: #18161A;
+		   box-shadow: 5px 5px 5px #000000;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+    background-image: url(images/logo.gif);
+    background-repeat: no-repeat;
+    background-color: #413644;
+    background-position: left center;
+    background-size: contain;
+    height: auto;
+    min-height: 110px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.8em, 5vw, 4.5em);
+    padding-left: clamp(100px, 18vw, 220px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 3px 3px 3px #141316;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+
+
+nav { padding-top: 10px;
+      float: left;
+      width: 20%;
+}
+nav ul { list-style-type: none; 
+       padding-left: 20px;
+	 }
+nav li { padding-bottom: 5px;
+       font-weight: bold;
+}
+
+nav a { text-decoration: none; }
+nav a:link { color: #7C975E; }
+nav a:visited{ color: #7C975E; }
+nav a:hover { color: #1F2618; }
+
+
+main { background-color: #6D5B71;
+          margin-left: 200px;
+          padding: 1px 20px 20px 20px;   
+		  min-height: 300px;
+}
+
+img{
+       max-width: 400px;
+       width: 100%;
+       float: right;
+       margin: 10px;
+}
+
+h2 {
+       font-size: 50px;
+}
+
+.info{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 20px;
+}
+
+table {
+  width: 30%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+
+th, td {
+  border: 1px solid #413644;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #413644;
+  font-weight: bold;
+}
+
+
+footer { background-color: #6D5B71;
+       margin-left: 200px;
+       padding: 20px;
+       text-align: center;
+	   font-size: small;
+	   font-style: italic;
+}
+	  
