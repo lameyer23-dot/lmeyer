@@ -30,20 +30,20 @@
           <legend>Guest Information</legend>
 
           <label>Full Name</label>
-          <input type="text" id="fullname">
+          <input type="text" id="fullname" required>
 
           <label>Email</label>
-          <input type="email" id="email">
+          <input type="email" id="email" required>
 
           <label>Phone</label>
-          <input type="tel" id="phone">
+          <input type="tel" id="phone" required>
         </fieldset>
 
         <fieldset>
           <legend>Reservation details</legend>
 
           <label class="selectroom">Select Room</label>
-          <select name="roomselect" id="roomselect">
+          <select name="roomselect" id="roomselect" required>
             <option value="Choose a room">Choose a room</option>
             <option value="Klien Room">Klien Room</option>
             <option value="Groß Room">Groß Room</option>
@@ -51,10 +51,10 @@
           </select>
 
           <label>Check In</label>
-          <input type="date" id="checkin">
+          <input type="date" id="checkin" required>
 
           <label>Check Out</label>
-          <input type="date" id="checkout">
+          <input type="date" id="checkout" required>
 
           <label>Special Requests</label>
           <textarea id="specialrequests"></textarea>
